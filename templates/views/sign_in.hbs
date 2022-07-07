@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    {{>header}}
+    <link rel="stylesheet" href="css/sign_in.css">
+    <title>Login page</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    {{!-- <div class="container">
+        <h1>Login to Educate-Bharat</h1>
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" class="type" id="email" placeholder="Enter Your Email"></input>
+        </div>
+        <div class="box">
+            <i class="fas fa-key"></i>
+            <input type="password" name="password" class="type" id="password" placeholder="Enter Your Password"></input>
+        </div>
+        <input type="submit" value="Sign In" class="btn-page"></input>
+
+    </div> --}}
+
+    <div class="main_div">
+        <div class="box2">
+            <h1>Login Form</h1>
+            <form action="">
+                <div class="input-box">
+                    <input type="text" name="Username" id="name" autocomplete="off" required />
+                    <label for="Username">Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="name" autocomplete="off" required />
+                    <label for="Password">Password</label>
+                </div>
+                <input class="final" type="submit" value="Login" />
+                <a href="/contact" class="regis final">Register</a>
+            </form>
+        </div>
+    </div>
+
+
+    <section id="register">
+        <div class="remind">
+            <h3>Register asap to get 15% off on all courses</h3>
+            <div class="time">
+                <div class="date">
+                    2<br>Days
+                </div>
+                <div class="date">
+                    23<br>Hours
+                </div>
+                <div class="date">
+                    04<br>Minutes
+                </div>
+                <div class="date">
+                    51<br>Seconds
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{>footer}}
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
