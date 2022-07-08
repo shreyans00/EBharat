@@ -6,7 +6,6 @@ const sidebar = document.querySelector('.sidebar')
 const nav = document.querySelector('.nav')
 
 burger.addEventListener('click', () => {
-    sidebar.classList.toggle('v-class-responsive');
     nav.classList.toggle('v-class-responsive');
     navbar.classList.toggle('h-nav-responsive');
 })
@@ -41,19 +40,3 @@ burger.addEventListener('click', () => {
 //         time.innerHTML = "Time's Up";
 //     }
 // }, 1000);
-
-
-function seterror(id, error) {
-    ele = document.getElementById(id);
-    ele.getElementsByClassName('err')[0].innerHTML = error;
-}
-
-function validatForm() {
-    var returnval = true;
-    var name = document.forms['myForm']["firstname"].value;
-    if (name.length < 5) {
-        seterror("name", "Length of name is too short");
-        returnval = false;
-    }
-    return returnval;
-}

@@ -76,3 +76,14 @@ body{
   .teacher .box .share a:hover{
     color:rgb(2, 44, 63);
   }
+
+  @media only screen and (max-width: 380px) {
+    .heading {
+      margin-block-start:1em;
+      font-size: 3rem;
+  }
+    
+    .teacher .box{
+      flex: 0 1 20rem;
+    }
+  }
